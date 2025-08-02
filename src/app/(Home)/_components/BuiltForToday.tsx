@@ -22,14 +22,14 @@ const BuildForToday = () => {
         <Picture
           src={girl1}
           alt="girl1"
-          className="w-full h-[700px] object-cover"
+          className="w-full h-64 sm:h-80 md:h-full lg:h-full object-cover"
         />
         <Picture
           src={girl2}
           alt="girl1"
-          className="w-full h-[700px] object-cover"
+          className="w-full h-64 sm:h-80 md:h-full lg:h-full object-cover"
         />
-        <div className="flex flex-col justify-center gap-10 p-5">
+        <div className="flex flex-col justify-center gap-10 p-5 bg-gray-50">
           <h1 className="text-xs">SUPPORT WHEN YOU NEED IT</h1>
           <h2 className="text-4xl leading-[50px] font-bold">
             Our support team is <br /> your team
