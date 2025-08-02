@@ -4,13 +4,13 @@ import React from "react";
 import ChangePasswordForm from "./components/ChangePasswordForm";
 
 const page = () => {
-	return (
-		<AppLayout>
-			<Dashboard>
-				<ChangePasswordForm />
-			</Dashboard>
-		</AppLayout>
-	);
+  return (
+    <AppLayout>
+      <Dashboard>
+        <ChangePasswordForm />
+      </Dashboard>
+    </AppLayout>
+  );
 };
 
 export default page;
