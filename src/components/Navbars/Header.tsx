@@ -197,7 +197,7 @@ const Header = () => {
           <div className="grid grid-cols-12 items-center w-full max-w-[1200px] mx-auto py-4 px-5 xl:px-0">
             {/* Logo - Left aligned */}
             <div className="col-span-3 flex justify-start">
-              <LogoImage className="w-[30px] lg:w-[120px]" />
+              <LogoImage />
             </div>
 
             {/* Search Bar - Centered */}
@@ -347,7 +347,7 @@ const Header = () => {
                   onClick={handleNavMenuClick}
                   className="text-2xl text-primary hover:scale-105 transition"
                 />
-                <LogoImage className="!w-[100px]" />
+                <LogoImage />
               </div>
 
               <div className="flex items-center gap-3">

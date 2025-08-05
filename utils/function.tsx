@@ -6,16 +6,17 @@ import Link from "next/link";
 interface LogoImageProps {
   className?: string;
 }
-
 export const LogoImage = ({ className }: LogoImageProps) => {
   return (
-    <Link href="/" className="">
+    <Link
+      href="/"
+      className="size-10 flex items-center flex-col justify-center">
       <Picture
         src={logoImage}
         alt="logo"
         priority
         loading="lazy"
-        className={`!w-[80px] lg:!w-[100px] h-[20px] lg:h-[50px] duration-300 hover:scale-105 transition-[.3] hover:animate-pulse font-bold text-5xl ${className}`}
+        className={`w-full h-auto duration-300 hover:scale-105 transition-transform hover:animate-pulse ${className}`}
       />
     </Link>
   );
