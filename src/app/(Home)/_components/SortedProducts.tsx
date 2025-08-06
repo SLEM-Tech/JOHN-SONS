@@ -62,7 +62,7 @@ const SortedProducts = () => {
       {/* Header Section */}
       <header className="text-center mb-12 ">
         <p className="text-lg">SOME QUALITY ITEMS</p>
-        <h1 className="text-4xl font-bold my-4">Popular Books</h1>
+        <h1 className="text-4xl font-bold my-4">Products</h1>
 
         {/* Categories List */}
         <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -92,7 +92,7 @@ const SortedProducts = () => {
         {isLoading ? (
           <div className="flex justify-center">Loading products...</div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
             {products.slice(0, 6).map((product) => (
               <ProductCard1 key={product.id} product={product} />
             ))}

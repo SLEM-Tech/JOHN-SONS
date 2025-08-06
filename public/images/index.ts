@@ -16,7 +16,7 @@ import computerOfficeResponsive2 from "./computer-office-responsive-image.png";
 import officeImg1 from "./office-img.png";
 import confetti from "./confetti.png";
 import banner from "./banner.png";
-import logoImage from "./duply-logo.png";
+import logoImage from "./john_and_sons_white_text.png";
 import heroBanner from "./hero banner.png";
 import gradIcon from "./graduateIcon.png";
 import flapriseIcon from "./flapriseIcon.png";

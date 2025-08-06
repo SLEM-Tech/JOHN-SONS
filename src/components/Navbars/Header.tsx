@@ -192,16 +192,17 @@ const Header = () => {
           navbar ? "" : ""
         }`}>
         {/* Desktop View */}
+        {/* Desktop View */}
         <div className="hidden slg:block">
-          <div className="flex items-center justify-between max-w-[1200px] mx-auto py-4 px-5 xl:px-0">
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <LogoImage className="w-[30px] lg:w-[120px] col-span-1" />
+          <div className="grid grid-cols-12 items-center w-full max-w-[1200px] mx-auto py-4 px-5 xl:px-0">
+            {/* Logo - Left aligned */}
+            <div className="col-span-3 flex justify-start">
+              <LogoImage />
             </div>
 
-            {/* Search Bar */}
-            <div className="flex-1 max-w-[500px] mx-8">
-              <div className="relative">
+            {/* Search Bar - Centered */}
+            <div className="col-span-6 flex justify-center">
+              <div className="relative w-full max-w-[500px]">
                 <input
                   type="text"
                   placeholder="I'm looking for..."
@@ -222,8 +223,8 @@ const Header = () => {
               </div>
             </div>
 
-            {/* User Actions */}
-            <div className="flex items-center gap-6">
+            {/* User Actions - Right aligned */}
+            <div className="col-span-3 flex items-center justify-end gap-6">
               {/* User Profile */}
               <div className="flex items-center gap-2">
                 {wc_customer_info?.shipping?.address_2 ? (
@@ -241,7 +242,6 @@ const Header = () => {
                   </div>
                 ) : (
                   <BsPersonFill className="w-8 h-8 text-primary" />
-                  // <UserIconSvg  />
                 )}
 
                 <div className="flex flex-col text-primary font-semibold text-sm">
@@ -329,7 +329,7 @@ const Header = () => {
                   </span>
                   <FaShopify className="size-8 text-primary" />
                 </div>
-                <span className="truncate text-sm font-semibold w-16 overflow-hidden">
+                <span className="truncate text-sm font-semibold text-primary w-16 overflow-hidden">
                   <FormatMoney2 value={calculateSubtotal()} />
                 </span>
               </div>
@@ -347,7 +347,7 @@ const Header = () => {
                   onClick={handleNavMenuClick}
                   className="text-2xl text-primary hover:scale-105 transition"
                 />
-                <LogoImage className="!w-[100px]" />
+                <LogoImage />
               </div>
 
               <div className="flex items-center gap-3">
