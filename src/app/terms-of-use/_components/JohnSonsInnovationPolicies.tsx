@@ -677,7 +677,7 @@ const JohnSonsInnovationPolicies = () => {
                 </li>
                 <li>Email: refunds@johnsons-tech.com.ng</li>
                 <li>Technical Support: support@johnsons-tech.com.ng</li>
-                <li>Phone: +234-801-234-5006</li>
+                {/* <li>Phone: +234-801-234-5006</li> */}
                 <li>Website: www.johnsons-tech.com.ng</li>
               </ul>
             </div>
