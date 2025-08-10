@@ -22,7 +22,7 @@ const MainCategoryContent = () => {
       )}
 
       {Categories && (
-        <div className="bg-background">
+        <div className=" mx-auto mb-8 pt-24">
           <h4 className="text-2xl mb-4 font-medium text-white ">
             All Categories
           </h4>
