@@ -30,7 +30,7 @@ const page = () => {
       {/* <AllCategorySection /> */}
       <HeroSection />
       <SecondHeroSection />
-      <div className="my-4 sm:my-10 mb-24">
+      <div className="my-4 sm:my-10 mb-24  max-w-[1200px] mx-auto">
         <SortedProducts />
         <BuildForToday />
         <Faq />
