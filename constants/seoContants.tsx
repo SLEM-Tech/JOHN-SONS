@@ -1,7 +1,7 @@
-const websiteUrl = "https://www.john&sons.com.ng/";
+const websiteUrl = "https://john-sons.vercel.app/";
 export const websiteName = "John & Sons";
 export const SEODATA = {
-  defaultOGImage: `https://www.john&sons.com.ng/_next/static/media/john&sons-logo.6c861d97.png`,
+  defaultOGImage: `https://john-sons.vercel.app/_next/static/media/john_and_sons_white_text.870a0550.png`,
   default: {
     title: websiteName,
     description: `This is ${websiteName}`,
