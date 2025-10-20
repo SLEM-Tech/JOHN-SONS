@@ -5,25 +5,25 @@ import { FaChevronLeft, FaChevronRight, FaQuoteLeft } from "react-icons/fa";
 interface Testimonial {
   text: string;
   author: string;
-  company: string;
+  product: string;
 }
 
 const TestimonialCarousel: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
-      text: "Neque est vulputate pulvinar ultrices dolor amet vel quis vitae. Malesuada a condimentum tellus interdum odio non commodo imperdiet. Nulla consectetur lacinia scelerisque lobortis nunc donec.",
-      author: "Clakunta Acketjee",
-      company: "Cola Fashion",
+      text: "John&Sons provided exactly what I needed for my home office setup. The laptop recommendations were spot-on, and the accessories perfectly complemented my workspace. Outstanding service!",
+      author: "David Okafor",
+      product: "MacBook Pro & Accessories",
     },
     {
-      text: "Absolutely phenomenal service! Our productivity increased by 200% after implementing their solution.",
-      author: "Michael Johnson",
-      company: "Tech Innovations Inc.",
+      text: "I've been shopping at John&Sons for years. Their product knowledge is impressive, and they always have the latest gadgets. The warranty support is exceptional too!",
+      author: "Aminat Ibrahim",
+      product: "Gaming Laptop Setup",
     },
     {
-      text: "The team delivered beyond our expectations. Truly partners in our success.",
-      author: "Sarah Williams",
-      company: "Global Solutions",
+      text: "Best tech store in Lagos! From wireless earbuds to my new laptop, everything has been top quality. The team really knows their stuff and genuinely cares about finding the right fit.",
+      author: "Chukwudi Eze",
+      product: "Dell XPS & Smart Accessories",
     },
   ];
 
@@ -73,7 +73,7 @@ const TestimonialCarousel: React.FC = () => {
     <div className="relative py-12 md:py-16 bg-background text-white overflow-hidden w-full">
       <div className="container mx-auto px-4 sm:px-6">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
-          What Our Clients Say
+          What Our Customers Say
         </h2>
 
         <div className="relative h-64 sm:h-80 md:h-96 max-w-4xl mx-auto">
@@ -99,7 +99,7 @@ const TestimonialCarousel: React.FC = () => {
                     {testimonial.author}
                   </p>
                   <p className="text-sm sm:text-md text-white">
-                    {testimonial.company}
+                    {testimonial.product}
                   </p>
                 </div>
               </div>

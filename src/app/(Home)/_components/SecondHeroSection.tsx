@@ -1,73 +1,69 @@
-import {
-  bookdoorIcon,
-  bookstoreIcon,
-  flapriseIcon,
-  gradIcon,
-  libraryIcon,
-  securityIcon,
-  speedIcon,
-  supportIcon,
-} from "@public/images";
-import Picture from "@src/components/picture/Picture";
+import { Zap, Shield, Headphones } from "lucide-react";
 import React from "react";
 
 const SecondHeroSection = () => {
   const heroIconData = [
     {
-      title: "Speed",
-      icon: speedIcon,
+      title: "Fast Delivery",
+      icon: Zap,
       description:
-        "Lorem ipsum dolor sit amet consectetur. Porta non neque morbi semper arcu sagittis.",
+        "Get your tech essentials delivered quickly to your doorstep with our reliable shipping service.",
     },
     {
-      title: "Security",
-      icon: securityIcon,
+      title: "Quality Assured",
+      icon: Shield,
       description:
-        "Lorem ipsum dolor sit amet consectetur. Porta non neque morbi semper arcu sagittis.",
+        "All products are thoroughly tested and verified to ensure you receive only authentic, high-quality gadgets and accessories.",
     },
     {
-      title: "Support",
-      icon: supportIcon,
+      title: "Expert Support",
+      icon: Headphones,
       description:
-        "Lorem ipsum dolor sit amet consectetur. Porta non neque morbi semper arcu sagittis.",
+        "Our knowledgeable team is ready to help you choose the right products and provide technical assistance whenever you need it.",
     },
   ];
 
   return (
-    <main className="bg-white mt-8 sm:mt-12 md:mt-20 py-8 sm:py-12 md:py-20 mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-      <section className="flex flex-col justify-center items-center gap-3 sm:gap-4 text-center">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
-          The complete technology stack for your business
-        </h1>
-        <p className="text-sm sm:text-base text-gray-600 max-w-3xl">
-          Top-end financial tools to help your business with its technology
-          operations and cash flow. We help companies of all types work better,
-          save time and money with a simply better banking service that works.
+    <div className="container mx-auto px-4 py-16 bg-white my-16">
+      <div className="text-center mb-6">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          Your complete technology destination for gadgets and laptops
+        </h2>
+      </div>
+      <div className="text-center mb-12 max-w-3xl mx-auto">
+        <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+          Premium gadgets, accessories, and laptops to enhance your digital
+          lifestyle. John&Sons helps individuals and businesses find the
+          perfect tech solutions with competitive prices, genuine products,
+          and exceptional customer service that you can trust.
         </p>
-      </section>
+      </div>
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-16 sm:mt-24 md:mt-32 gap-6 sm:gap-8">
-        {heroIconData?.map((item, i) => (
-          <div
-            className="flex flex-col sm:flex-row items-center sm:items-start gap-4 p-4 sm:p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow"
-            key={i}>
-            <Picture
-              src={item?.icon}
-              alt={`icon ${i + 1}`}
-              className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 object-contain"
-            />
-            <div className="text-center sm:text-left space-y-2">
-              <h1 className="text-lg sm:text-xl font-semibold">
-                {item?.title}
-              </h1>
-              <p className="text-xs sm:text-sm text-gray-500">
-                {item?.description}
-              </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+        {heroIconData?.map((item, i) => {
+          const IconComponent = item.icon;
+          return (
+            <div key={i} className="text-center">
+              <div className="flex flex-col items-center space-y-4">
+                <div className="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full">
+                  <IconComponent size={32} className="text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {item?.title}
+                  </h3>
+                </div>
+                <div>
+                  <p className="text-gray-600 leading-relaxed">
+                    {item?.description}
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
-      </section>
-    </main>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 

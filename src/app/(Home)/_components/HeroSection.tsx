@@ -36,7 +36,7 @@ const HeroSection = () => {
           </Link>
         </div>
 
-        <div className="flex flex-wrap items-center gap-3 sm:gap-4 w-full max-w-[500px]">
+        {/* <div className="flex flex-wrap items-center gap-3 sm:gap-4 w-full max-w-[500px]">
           {heroImg?.map((img, i) => (
             <Picture
               src={img}
@@ -45,7 +45,7 @@ const HeroSection = () => {
               className="w-28 xs:w-32 sm:w-36 flex-shrink-0"
             />
           ))}
-        </div>
+        </div> */}
       </section>
       <section className="order-1 lg:order-2 w-full lg:w-auto mt-4 sm:mt-6 lg:mt-0">
         <Picture
