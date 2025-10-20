@@ -37,11 +37,11 @@ const BuildForToday = () => {
           <p>
             Our team at John&Sons combines product expertise with genuine
             passion for technology. Whether you need help choosing the perfect
-            laptop or finding the right accessories, we're here to guide you
+            laptop or finding the right accessories, we&apos;re here to guide you
             through every decision.
           </p>
           <p>
-            We're committed to more than just sales – we're your trusted partner
+            We&apos;re committed to more than just sales – we&apos;re your trusted partner
             in building the perfect tech setup that matches your lifestyle and
             budget.
           </p>
