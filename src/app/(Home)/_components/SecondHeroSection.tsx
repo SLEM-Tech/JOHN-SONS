@@ -27,15 +27,15 @@ const SecondHeroSection = () => {
     <div className="container mx-auto px-4 py-16 bg-white my-16">
       <div className="text-center mb-6">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
-          Your complete technology destination for gadgets and laptops
+          Computers, PC Accessories & Software Tools
         </h2>
       </div>
       <div className="text-center mb-12 max-w-3xl mx-auto">
         <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-          Premium gadgets, accessories, and laptops to enhance your digital
-          lifestyle. John&Sons helps individuals and businesses find the
-          perfect tech solutions with competitive prices, genuine products,
-          and exceptional customer service that you can trust.
+          Explore high-performance laptops, desktops, accessories, and software
+          designed to elevate your productivity. At John&Sons, we deliver
+          trusted tech solutions with authentic products, fair prices, and
+          customer service that puts you first.
         </p>
       </div>
 
